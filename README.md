@@ -1,5 +1,5 @@
 # CropSense: The Intelligent Crop Recommender 
-### Welcome to Team2 of COMP 313-003 @ Centennial College
+### Welcome to Team2 of COMP 313-003-W24 @ Centennial College
 
 | Group Members: | 
 | --- |
