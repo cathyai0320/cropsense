@@ -35,7 +35,10 @@ function App() {
         </Routes>
       </Router>
     </AuthProvider>
+    
   );
 }
+
+
 
 export default App;
