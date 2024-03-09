@@ -14,7 +14,7 @@ code {
 
 .main-photo{
   position: relative;
-  height: 700px;
+  height: 100vh;
   background-image: url(./img/crop.png);
   background-size: cover;
   background-position: center;
@@ -93,3 +93,4 @@ code {
     transform: rotate(360deg);
   }
 }
+
