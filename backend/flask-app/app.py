@@ -156,8 +156,11 @@ def chatbot_ask():
         return jsonify({'msg': response, 'answer': ''}), 500
 
 
-# print("Model loaded")
-app.run(port=port)
+# # print("Model loaded")
+# app.run(port=port)
 
-flask_app =  app
-# Create a test client using the Flask application configured for testing
+# flask_app =  app
+# # Create a test client using the Flask application configured for testing
+    
+if __name__ =="__main__":
+    app.run(prot=port)
