@@ -27,7 +27,10 @@ const CropRecommenderPage = () => {
     }
   }, [isAuthenticated, navigate]);
 
-  const handleAnalyze = async () => {
+  const handleAnalyze = async (e) => {
+    // prevent default form submission
+    e.preventDefault();
+
     if (nitrogen < 0 || phosphorus < 0 || potassium < 0 || temperature < 0 || humidity < 0 || ph < 0 || rainfall < 0) {
       alert('Please enter valid values');
       return;
