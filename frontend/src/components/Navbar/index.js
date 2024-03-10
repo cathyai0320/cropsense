@@ -1,52 +1,41 @@
 import React from "react";
-import {
-    Nav,
-    NavLink,
-    Bars,
-    NavMenu,
-    NavBtn,
-    NavBtnLink,
-} from "./NavbarElements";
+import { NavLink } from "react-router-dom";
+import { Navbar, Container, Nav } from 'react-bootstrap';
 import { useAuth } from "../Auth/AuthContext";
 
-const Navbar = () => {
+const NavigationBar = () => {
     const { isAuthenticated, logout } = useAuth();
+
     return (
-        <>
-            <Nav>
-                <Bars />
-
-                <NavMenu>
-                    <NavLink to="/about" activestyle={{ color: 'green' }}>
-                        About
-                    </NavLink>
+        <Navbar bg="dark" variant="dark" expand="lg">
+            <Container>
+                <Navbar.Brand as={NavLink} to="/">CropSense</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                        <Nav.Link as={NavLink} to="/" activestyle={{ color: 'green' }}>Home</Nav.Link>
+                        {isAuthenticated() && (
+                            <>
+                                <Nav.Link as={NavLink} to="/croprecommender" activestyle={{ color: 'green' }}>Predict</Nav.Link>
+                                <Nav.Link as={NavLink} to="/profile" activestyle={{ color: 'green' }}>Profile</Nav.Link>
+                                <Nav.Link as={NavLink} to="/chatbot" activestyle={{ color: 'green' }}>Chatbot</Nav.Link>
+                            </>
+                        )}
+                    </Nav>
                     {isAuthenticated() ? (
-                        <>
-                            <NavLink to="/profile" activestyle={{ color: 'green' }}> Profile </NavLink>
-                            <NavLink to="/croprecommender" activestyle={{ color: 'green' }}> Crop Recommender </NavLink>
-                            <NavLink to="/chatbot" activestyle={{ color: 'green' }}> Chatbot </NavLink>
-                        </>
-                    ) : null}
-
-                    {/* Second Nav */}
-                    {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
-                </NavMenu>
-                {isAuthenticated() ? (
-                    <NavBtn>
-                        <NavBtnLink to="/sign-out" onClick={logout}> Sign Out </NavBtnLink>
-                    </NavBtn>
-                ) : (
-                    <NavBtn>
-                        <>
-                            <NavBtnLink to="/sign-up"> Sign Up </NavBtnLink>
-                            <NavBtnLink to="/sign-in"> Sign In </NavBtnLink>
-                        </>
-                    </NavBtn>
-                )}
-
-            </Nav>
-        </>
+                        <Nav>
+                            <Nav.Link as={NavLink} to="/sign-out" onClick={logout}>Sign Out</Nav.Link>
+                        </Nav>
+                    ) : (
+                        <Nav>
+                            <Nav.Link as={NavLink} to="/sign-up">Sign Up</Nav.Link>
+                            <Nav.Link as={NavLink} to="/sign-in">Sign In</Nav.Link>
+                        </Nav>
+                    )}
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     );
 };
 
-export default Navbar;
+export default NavigationBar;
