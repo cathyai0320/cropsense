@@ -157,4 +157,5 @@ def chatbot_ask():
 
 
 if __name__ == "__main__":
-    serve(app, listen=f'*:{5000}')
+    port = int(os.environ.get("PORT", 8080))
+    serve(app, listen=f'*:{port}')
