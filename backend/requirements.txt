@@ -1,0 +1,13 @@
+flask
+flask_cors
+flask_jwt_extended
+waitress
+
+joblib
+scikit-learn==1.3.2
+pandas
+numpy
+pymongo
+llamaapi
+langchain
+langchain_experimental
