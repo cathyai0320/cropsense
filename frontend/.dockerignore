@@ -1,0 +1,31 @@
+# Ignore Node.js modules
+node_modules
+
+# Ignore build artifacts
+build
+dist
+
+# Ignore log files
+*.log
+
+# Ignore editor and IDE files
+.vscode
+.idea
+
+# Ignore Git and version control files
+.git
+.gitignore
+
+# Ignore Docker-related files
+Dockerfile
+.dockerignore
+
+# Ignore test and coverage files
+coverage
+*.test.js
+*.spec.js
+
+# Ignore any other files or directories specific to your project
+# For example:
+# src/config/local.js
+# docs
