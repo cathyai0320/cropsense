@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 from flask_cors import CORS
 from flask_jwt_extended import create_access_token
+from waitress import serve
 
 from misc import config, db
 
@@ -31,7 +32,6 @@ from langchain_core.messages import SystemMessage
 app = Flask(__name__)
 app.config['JWT_SECRET_KEY'] = 'cropsense'
 jwt = JWTManager(app)
-port = 5000
 CORS(app)
 
 
@@ -157,4 +157,4 @@ def chatbot_ask():
 
 
 if __name__ == "__main__":
-    app.run(port=port)
+    serve(app, listen=f'*:{5000}')
