@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
-export const baseURL = 'http://127.0.0.1:5000'
+const baseURL = process.env.NODE_ENV === 'production'
+    ? process.env.REACT_APP_PROD_BASE_URL
+    : process.env.REACT_APP_DEV_BASE_URL;
 
 export const getBestCrop = async (params, modelname) => {
 
