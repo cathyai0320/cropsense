@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 from flask_cors import CORS
 from flask_jwt_extended import create_access_token
+from waitress import serve
 
 from misc import config, db
 
@@ -31,7 +32,6 @@ from langchain_core.messages import SystemMessage
 app = Flask(__name__)
 app.config['JWT_SECRET_KEY'] = 'cropsense'
 jwt = JWTManager(app)
-target_port = 5000
 CORS(app)
 
 
@@ -156,11 +156,6 @@ def chatbot_ask():
         return jsonify({'msg': response, 'answer': ''}), 500
 
 
-# # print("Model loaded")
-# app.run(port=port)
-
-# flask_app =  app
-# # Create a test client using the Flask application configured for testing
-    
-if __name__ =="__main__":
-    app.run(port=target_port)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    serve(app, listen=f'*:{port}')
