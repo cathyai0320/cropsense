@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Navbar, Container, Nav } from 'react-bootstrap';
-import { useAuth } from "../Auth/AuthContext"; 
+import { useAuth } from "../Auth/AuthContext";
 
 const NavigationBar = () => {
     const { isAuthenticated, logout } = useAuth();
@@ -14,9 +14,9 @@ const NavigationBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link as={NavLink} to="/" activestyle={{ color: 'green' }}>Home</Nav.Link>
-                        <Nav.Link as={NavLink} to="/croprecommender" activestyle={{ color: 'green' }}>Predict</Nav.Link>
-                        {isAuthenticated && (
+                        {isAuthenticated() && (
                             <>
+                                <Nav.Link as={NavLink} to="/croprecommender" activestyle={{ color: 'green' }}>Predict</Nav.Link>
                                 <Nav.Link as={NavLink} to="/profile" activestyle={{ color: 'green' }}>Profile</Nav.Link>
                                 <Nav.Link as={NavLink} to="/chatbot" activestyle={{ color: 'green' }}>Chatbot</Nav.Link>
                             </>

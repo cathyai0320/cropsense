@@ -31,7 +31,7 @@ from langchain_core.messages import SystemMessage
 app = Flask(__name__)
 app.config['JWT_SECRET_KEY'] = 'cropsense'
 jwt = JWTManager(app)
-port = 5000
+target_port = 5000
 CORS(app)
 
 
@@ -163,4 +163,4 @@ def chatbot_ask():
 # # Create a test client using the Flask application configured for testing
     
 if __name__ =="__main__":
-    app.run(prot=port)
+    app.run(port=target_port)
