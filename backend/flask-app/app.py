@@ -113,8 +113,8 @@ def signup():
 def hello_world():
     return "Hello World!"
 
-# use decorator pattern for the route
 @app.route('/predict/svc', methods=["POST"])
+@jwt_required()
 def predictSVC():
     data = request.json
     result, status = predict(data, svc_clf)
@@ -123,8 +123,8 @@ def predictSVC():
     else:
         return jsonify({'msg': result, 'prediction': ''}), 500
 
-# use decorator pattern for the route
 @app.route("/predict/gnb", methods=["POST"])
+@jwt_required()
 def predictGNB():
     data = request.json
     result, status = predict(data, gnb_clf)
@@ -132,9 +132,9 @@ def predictGNB():
         return jsonify({'msg': 'Prediction done successfully', 'prediction': result}), 201
     else:
         return jsonify({'msg': result, 'prediction': ''}), 500
-    
-# use decorator pattern for the route
+
 @app.route("/predict/knn", methods=["POST"])
+@jwt_required()
 def predictKNN():
     data = request.json
     result, status = predict(data, knn_clf)
@@ -146,6 +146,7 @@ def predictKNN():
 
 
 @app.route('/chatbot/ask', methods=["POST"])
+@jwt_required()
 def chatbot_ask():
     question = request.json
     response, status = ask_chatbot(question)
