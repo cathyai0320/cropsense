@@ -1,6 +1,12 @@
 # Use the slim version of the node 14 image as our base
 FROM node:14-slim
 
+# Add Tini
+ENV TINI_VERSION v0.19.0
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
+RUN chmod +x /tini
+ENTRYPOINT ["/tini", "--"]
+
 # Create a directory for our application in the container 
 RUN mkdir -p /usr/src/app
 
