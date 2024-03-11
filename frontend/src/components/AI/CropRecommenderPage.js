@@ -15,17 +15,16 @@ const CropRecommenderPage = () => {
   let [useUserInfo, setUseUserInfo] = useState(true);
   let [selectedModel, setSelectedModel] = useState('svc');
   let [recommendedCrop, setRecommendedCrop] = useState('');
-
-  let { isAuthenticated } = useAuth();
+  const { token } = useAuth();
 
 
   let navigate = useNavigate();
 
   useEffect(() => {
-    if (!isAuthenticated()) {
+    if (!token) {
       navigate('/sign-in');
     }
-  }, [isAuthenticated, navigate]);
+  }, [token, navigate]);
 
   const handleAnalyze = async (e) => {
     // prevent default form submission
@@ -50,7 +49,7 @@ const CropRecommenderPage = () => {
       rainfall,
     ];
 
-    let prediction = await getBestCrop(params, selectedModel);
+    let prediction = await getBestCrop(params, selectedModel, token);
     if (prediction !== '') {
       setRecommendedCrop(prediction);
       console.log(prediction);

@@ -4,13 +4,14 @@ const baseURL = process.env.NODE_ENV === 'production'
     ? process.env.REACT_APP_PROD_BASE_URL
     : process.env.REACT_APP_DEV_BASE_URL;
 
-export const getBestCrop = async (params, modelname) => {
+export const getBestCrop = async (params, modelname, token) => {
 
     try {
         let response = await fetch(`${baseURL}/predict/${modelname}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
             },
             body: JSON.stringify(params),
         });
@@ -28,13 +29,14 @@ export const getBestCrop = async (params, modelname) => {
     }
 };
 
-export const getChatResponse = async (question) => {
+export const getChatResponse = async (question, token) => {
 
     try {
         let response = await fetch(`${baseURL}/chatbot/ask`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
             },
             body: JSON.stringify(question),
         });
