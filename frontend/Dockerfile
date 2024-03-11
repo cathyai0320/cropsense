@@ -1,5 +1,4 @@
-# Use the slim version of the node 14 image as our base
-FROM node:14-slim
+FROM node:20-slim
 
 # Add Tini
 ENV TINI_VERSION v0.19.0
