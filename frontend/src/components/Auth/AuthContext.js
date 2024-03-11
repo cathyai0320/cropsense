@@ -80,7 +80,7 @@ const AuthProvider = ({ children }) => {
       setIsLogging(false);
 
       setToken(data.token);
-      localStorage.setItem('token', token);
+      localStorage.setItem('token', data.token);
 
       return true;
     } catch (error) {

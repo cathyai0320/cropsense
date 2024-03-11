@@ -100,7 +100,7 @@ const CropRecommenderPage = () => {
               </div>
 
               <label htmlFor='recommendedCrop' className="form-label">Recommended Crop: </label>
-              <input id='recommendedCrop' className="form-control" type="text" value={recommendedCrop} />
+              <input id='recommendedCrop' className="form-control" type="text" value={recommendedCrop} readOnly/>
             </div>
           </form>
         </div>

@@ -23,7 +23,7 @@ const EditProfile = ({ user, onSave }) => {
           <div className="row">
 
               <div className="text-center mb-3">
-              <h2 class="my-3">Edit Profile</h2>
+              <h2 className="my-3">Edit Profile</h2>
               </div>
               <div className="row mt-2">
                 <div className="col-md-12">
