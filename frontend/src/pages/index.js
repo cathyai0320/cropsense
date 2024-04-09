@@ -7,6 +7,8 @@ const Home = () => {
         <h1 className="overlay-title">CropSense: The Intelligence Crop Recommender</h1>
         <p>
           CropSense is at the forefront of agricultural innovation. 
+        </p>
+        <p>
           Our Generative AI-based solution is designed to revolutionize crop management.
         </p>
         <p>
