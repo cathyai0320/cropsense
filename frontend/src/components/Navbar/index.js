@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import { useAuth } from "../Auth/AuthContext";
 
 const NavigationBar = () => {
@@ -16,9 +16,32 @@ const NavigationBar = () => {
                         <Nav.Link as={NavLink} to="/" activestyle={{ color: 'green' }}>Home</Nav.Link>
                         {isAuthenticated() && (
                             <>
-                                <Nav.Link as={NavLink} to="/croprecommender" activestyle={{ color: 'green' }}>Predict</Nav.Link>
+                                <Nav.Link as={NavLink} to="/predict" activestyle={{ color: 'green' }}>Predict</Nav.Link>
                                 <Nav.Link as={NavLink} to="/profile" activestyle={{ color: 'green' }}>Profile</Nav.Link>
                                 <Nav.Link as={NavLink} to="/chatbot" activestyle={{ color: 'green' }}>Chatbot</Nav.Link>
+                                
+                                {/* Dropdown for Researchers */}
+                                <NavDropdown title="For Researchers" id="researchers-dropdown">
+                                    <NavDropdown.Item as={NavLink} to="/advanced-analytics">
+                                        Advanced Analytics
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item as={NavLink} to="/data-export">
+                                        Data Export
+                                    </NavDropdown.Item>
+                                </NavDropdown>
+                                
+                                {/* Dropdown for Stakeholders */}
+                                <NavDropdown title="For Stakeholders" id="stakeholders-dropdown">
+                                    <NavDropdown.Item as={NavLink} to="/market-trends">
+                                        Market Trends
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item as={NavLink} to="/crop-viability">
+                                        Crop Viability
+                                    </NavDropdown.Item>
+                                    <NavDropdown.Item as={NavLink} to="/regional-opportunities">
+                                        Regional Opportunities
+                                    </NavDropdown.Item>
+                                </NavDropdown>
                             </>
                         )}
                     </Nav>
