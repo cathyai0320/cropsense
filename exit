@@ -1,0 +1,270 @@
+[33mcommit 7b661d12c2b374da8856765bd3cb37e56b48fcec[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Mon Mar 11 11:27:55 2024 -0400
+
+    Minor fixes
+
+[33mcommit 0168ff91132b1636fa902ccbc9f6f93f01b74118[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Mon Mar 11 03:59:50 2024 -0400
+
+    Use caching for improved build speed
+
+[33mcommit 9d02fa0b16d75f773ba61085e45d60a08d4ef826[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Mon Mar 11 03:59:14 2024 -0400
+
+    Node.js version up
+
+[33mcommit 0f5cbac190eeba03783e0d225e5ffe3be3caf84e[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Mon Mar 11 03:06:47 2024 -0400
+
+    Require token on backend requests
+
+[33mcommit 73e373ed2270734d71ff24760af4977e4c6f5d9c[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Mon Mar 11 03:06:15 2024 -0400
+
+    Send token with backend requests
+
+[33mcommit 337ad46b9c4a6992451fe87a29a86d901b136e1a[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Mon Mar 11 00:10:57 2024 -0400
+
+    Add handling SIGTERM
+    
+    Check https://cloud.google.com/run/docs/about-execution-environments
+
+[33mcommit a2b498596a9fd6e1a9f75598533467530916220d[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sun Mar 10 21:25:43 2024 -0400
+
+    Update Cloud Build settings
+
+[33mcommit b4d5ccae4ad36d6791d8b86b8015aa5e7b47b235[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sun Mar 10 21:06:50 2024 -0400
+
+    Add Cloud Build settings
+
+[33mcommit 93b0c9c92549fc506466df9db7b76a121445fd97[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sun Mar 10 20:38:19 2024 -0400
+
+    Delete .github directory
+
+[33mcommit 6b1883cd9ef355608c2ada5c63d99ec55de836d4[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sun Mar 10 20:08:11 2024 -0400
+
+    Rename dockerfile to Dockerfile
+
+[33mcommit cc03d5fa24e1cddb987d1d020e7d94f9b1c22d43[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sun Mar 10 12:44:07 2024 -0400
+
+    Update google-cloudrun-docker.yml
+
+[33mcommit 3fd258327e1722c88125fa91a69fbdaf05bdd5c0[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sun Mar 10 12:32:24 2024 -0400
+
+    Update google-cloudrun-docker.yml
+
+[33mcommit c4d51480b0f98e3e069fa0b73451e195b17182b8[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sun Mar 10 12:28:49 2024 -0400
+
+    Update google-cloudrun-docker.yml
+
+[33mcommit 2a498fffc1aad98a9eabc7b0155b643dcedf0f95[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sun Mar 10 12:23:53 2024 -0400
+
+    Update google-cloudrun-docker.yml
+
+[33mcommit fa7d0898df5ac7cdc9f5cde4e028d655afca9239[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sun Mar 10 11:24:19 2024 -0400
+
+    Create google-cloudrun-docker.yml
+
+[33mcommit dcb584470144a86040d199f63e24a7e5c7ae8a2b[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sun Mar 10 10:41:45 2024 -0400
+
+    Remove unused file
+
+[33mcommit afb70654d2b266390303ab530d7602bf3aa0da66[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sun Mar 10 10:38:19 2024 -0400
+
+    Add .dockerignore for frontend
+
+[33mcommit 8ae4a351c5e487e893025a903f3d4796f9f2a904[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sun Mar 10 10:38:00 2024 -0400
+
+    Add Dockerfile for backend
+
+[33mcommit a80f9682985aa7987801108bd4679201773d44dd[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sun Mar 10 10:32:25 2024 -0400
+
+    Remove .pyc files from the repository
+
+[33mcommit a2721465b5141458ccd5157d302d7c05ffdb1c9e[m
+Merge: 498aadb 44b319f
+Author: lyeung20 <113111819+lyeung20@users.noreply.github.com>
+Date:   Sun Mar 10 00:44:41 2024 -0500
+
+    Merge pull request #3 from sgtneckbeard/dev-ui
+    
+    fix title and hero
+
+[33mcommit 44b319feb0f812007d433d853b5aadd6e15e8790[m[33m ([m[1;31morigin/dev-ui[m[33m)[m
+Author: lyeung20 <lyeung20@my.centennialcollege.ca>
+Date:   Sun Mar 10 00:43:35 2024 -0500
+
+    fix title and hero
+
+[33mcommit 498aadbe4359af71d4c3321ee673b1c013e477e5[m
+Merge: 3cecd33 083fe73
+Author: lyeung20 <113111819+lyeung20@users.noreply.github.com>
+Date:   Sat Mar 9 23:45:24 2024 -0500
+
+    Merge pull request #2 from sgtneckbeard/dev-ui
+    
+    Dev UI
+
+[33mcommit 083fe73703862b949c78b1907e841127d04c741f[m
+Merge: 2c94b51 3cecd33
+Author: lyeung20 <113111819+lyeung20@users.noreply.github.com>
+Date:   Sat Mar 9 23:45:15 2024 -0500
+
+    Merge branch 'main' into dev-ui
+
+[33mcommit 2c94b515e66b56ac8f065a85ff9570d89abff14c[m
+Merge: 30fe9f9 2ca01f8
+Author: lyeung20 <lyeung20@my.centennialcollege.ca>
+Date:   Sat Mar 9 23:39:27 2024 -0500
+
+    Merge branch 'dev-ui' of https://github.com/sgtneckbeard/comp313-003_team2_W24 into dev-ui
+
+[33mcommit 30fe9f928dcd0c3d3b25f90c477d8ab768d494df[m
+Author: lyeung20 <lyeung20@my.centennialcollege.ca>
+Date:   Sat Mar 9 23:39:04 2024 -0500
+
+    Update Profile page and rearrange use user's information
+
+[33mcommit 2ca01f80615d1b6c2d58127ecbc918582f0b06f8[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sat Mar 9 22:38:38 2024 -0500
+
+    Add Dockerfile for frontend
+
+[33mcommit d624433727ca9bdf1b315a663a9d90557d2bd59b[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sat Mar 9 22:14:03 2024 -0500
+
+    Get baseURL per environment
+
+[33mcommit 6bbab2d5745b0cad4df11e662dc57335c60172f9[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sat Mar 9 22:05:56 2024 -0500
+
+    Add dotenv
+
+[33mcommit 3cecd3363131389f58dc33a8609e774524a651ff[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sat Mar 9 22:05:02 2024 -0500
+
+    Update backend fallback port
+
+[33mcommit 47df0c30a788db8fb8c92b9d2e7a0af563c64c5d[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sat Mar 9 21:39:32 2024 -0500
+
+    Remove app.py
+
+[33mcommit 5f9512578e0a6c345824e31b848a53214c3478ad[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sat Mar 9 21:07:27 2024 -0500
+
+    Get port from OS environment
+
+[33mcommit fac62a38ede1fa5febefbd13024fb6eb0ecb7ea3[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sat Mar 9 20:58:28 2024 -0500
+
+    Apply waitress for WSGI
+
+[33mcommit 4a51f84abcdba774a927a2fd6e1580e66963f25b[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sat Mar 9 20:57:40 2024 -0500
+
+    Rename .gitignore
+
+[33mcommit 15c9294cfff6920be67cff3709f14c046d0881b6[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sat Mar 9 20:55:02 2024 -0500
+
+    Add requirements.txt
+
+[33mcommit f90dcd7e79158f3cc1dc66ea37fcb7b73dc264cb[m
+Author: Minjee Kim <minjee.kim.ml@gmail.com>
+Date:   Sat Mar 9 15:59:54 2024 -0500
+
+    dev-ui modify handleAnalyze
+
+[33mcommit ec8331d9716914efb0f08966c5ae5b0feb8b9c57[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sat Mar 9 15:27:46 2024 -0500
+
+    Run app.run() only when running on main
+
+[33mcommit 6561ddafcbf9c1cba3f6c983ccd4f416b83dbf6f[m
+Author: Wonyoung Chung <demoronator@gmail.com>
+Date:   Sat Mar 9 15:26:15 2024 -0500
+
+    Add .gitignore
+
+[33mcommit 90be5368b2736e6f5bddb7f0507459d1845e8a37[m
+Author: Minjee Kim <minjee.kim.ml@gmail.com>
+Date:   Sat Mar 9 15:21:48 2024 -0500
+
+    dev-ui backend added launch.json
+
+[33mcommit f8b9c6ab80556e6ce51cc20247c9d142caa5b645[m
+Author: Minjee Kim <minjee.kim.ml@gmail.com>
+Date:   Sat Mar 9 15:20:03 2024 -0500
+
+    dev-ui CropRecommenderPage ui
+
+[33mcommit 6ed6a9035ba8151982bda19cfd8dd541e53d3163[m
+Author: Minjee Kim <minjee.kim.ml@gmail.com>
+Date:   Fri Mar 8 08:47:57 2024 -0500
+
+    ui for home
+
+[33mcommit b24de70db58be45d091854860ee3974aed150559[m
+Merge: dc539c7 86b38ef
+Author: lyeung20 <113111819+lyeung20@users.noreply.github.com>
+Date:   Wed Mar 6 19:40:20 2024 -0500
+
+    Merge pull request #1 from sgtneckbeard/project_init
+    
+    add web app
+
+[33mcommit 86b38ef36a7c43a278076c142da0b3f441254b58[m[33m ([m[1;31morigin/project_init[m[33m)[m
+Author: lyeung20 <lyeung20@my.centennialcollege.ca>
+Date:   Wed Mar 6 19:39:08 2024 -0500
+
+    add web app
+
+[33mcommit dc539c7a48347c8427954419f10fa62b58e03037[m
+Author: lyeung20 <lyeung20@my.centennialcollege.ca>
+Date:   Mon Mar 4 10:53:19 2024 -0500
+
+    add new models and add frontend 

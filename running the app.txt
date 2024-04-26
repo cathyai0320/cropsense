@@ -1,0 +1,77 @@
+Setup
+Install VS Code: If you don't already have VS Code, download and install it from the official website.
+
+Install Git: Ensure you have Git installed on your system to clone the repository. You can download it from git-scm.com.
+
+Clone the Repository:
+
+Open VS Code.
+Access the built-in terminal (Ctrl+`).
+Navigate to the directory where you want to clone the repository.
+Use the git clone command followed by the URL of the repository.
+Open the Project:
+
+In VS Code, go to File > Open Folder... and select the cloned project
+directory.
+Running Backend
+Install Python: Make sure you have Python installed, as the backend 
+uses Flask (a Python framework).
+
+Set up a Python Virtual Environment:
+
+In the terminal, navigate to the backend directory.
+Create a virtual environment with python -m venv venv.
+Activate the virtual environment with source venv/bin/activate (
+on Unix/macOS) or venv\Scripts\Activate (on Windows).
+Install Dependencies:
+
+Ensure you’re in the backend directory where the requirements.txt 
+is located.
+Install the required packages with pip install -r requirements.txt.
+Run the Flask App:
+
+In the flask-app directory, set the environment variable for Flask: 
+export FLASK_APP=app.py (on Unix/macOS) or set FLASK_APP=app.py 
+(on Windows).
+Run the application with flask run.
+Running Frontend
+Install Node.js: The frontend is a React app, so ensure you have 
+Node.js and npm installed.
+
+Install Frontend Dependencies:
+
+Open a new terminal in VS Code.
+Navigate to the frontend directory.
+Run npm install to install the dependencies.
+Start the React App:
+
+In the frontend directory, start the app with npm start.
+Docker Option
+If the project is set up with Docker and you prefer using it:
+
+Install Docker: Download and install Docker if it’s not already installed on your system.
+
+Build and Run Containers:
+
+Open a terminal in VS Code at the root of the project.
+Build the Docker images using the Dockerfiles provided.
+You might use docker-compose if a docker-compose.yml file is provided.
+Run the containers as specified by the project's Docker setup.
+
+git pull origin main
+
+commit changes to github:
+cd "C:\Users\Yenny\Desktop\Winter2024 Courses\EMPS102 Employment Skills II\group project\comp313-003_team2_W24\backend"
+git add .
+git commit -m "Describe your changes here"
+git push origin main
+
+
+Steps to run the app:
+cd backend
+.\venv\Scripts\Activate
+pipenv sync
+aws configure
+chalice local
+Run the wow.html and index.html in Website folder (
+
