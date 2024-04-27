@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CropSense: The Intelligent Crop Recommender 
 ### Welcome to Team2 of COMP 313-003-W24 @ Centennial College
 
@@ -23,3 +24,6 @@ a harmonious balance between long-term soil vitality and sustained crop producti
 
 
 
+=======
+# cropsense
+>>>>>>> 565285375c6b1e564daca8a32251aab4a60797a5
